@@ -1,1 +1,3 @@
 mcp和skill的区别
+mcp代表了一个接口，agent能通过mcp使用ocr等软件，读取pdf里的文字，docling与ocr同为处理工具，一般的pdf-mcp内部封装ocr或docling用于处理pdf，后处理得到的文字直接发回agent
+skill代表一套标准的处理流程，会指定使用pandoc处理doc文件，若同时安装docling，则不会调用docling，所以可以更改skill的配置文件，让处理doc时，使用docling

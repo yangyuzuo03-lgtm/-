@@ -1,0 +1,25 @@
+sudo apt install ./wps-office_12.1.2.26885.AK.preread.sw.Personal_715971_amd64.deb
+用于安装wps
+
+由于梯子不支持旧的mihono核心，所以需要自己替换
+安装包放在u盘了
+cd ~/Downloads
+sudo apt install ./mihomo-linux-amd64-v1-v1.19.27.deb安装mihono的新核心
+
+which mihomo
+mihomo -v查看核心位置
+
+sudo cp /usr/bin/verge-mihomo /usr/bin/verge-mihomo.bak
+sudo cp /usr/bin/verge-mihomo-alpha /usr/bin/verge-mihomo-alpha.bak
+
+sudo cp /usr/bin/mihomo /usr/bin/verge-mihomo
+sudo cp /usr/bin/mihomo /usr/bin/verge-mihomo-alpha
+
+sudo chmod +x /usr/bin/verge-mihomo /usr/bin/verge-mihomo-alpha
+替换核心
+
+/usr/bin/verge-mihomo -v
+/usr/bin/verge-mihomo-alpha -v
+验证核心
+
+Mihomo Meta v1.19.27显示即为成功
